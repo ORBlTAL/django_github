@@ -1,0 +1,20 @@
+{% extends 'articles/base.html' %}
+{% block content %}
+  <h1>Hello, {{ name }}!</h1>
+
+  <a href="/articles/dinner/">저녁 메뉴 확인하러 가기!!</a>
+  <a href="{% url "articles:dinner" %}">저녁 메뉴 확인하러 가기!!</a>
+{% endblock content %}
+
+
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hello, {{ name }}!</h1>
+</body>
+</html> {% endcomment %}
